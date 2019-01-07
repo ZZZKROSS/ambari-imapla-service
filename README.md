@@ -97,19 +97,3 @@ we need add below config to /etc/hadoop/conf/hdfs-site.xml
 ```
 add config info through webui
 
-![Image](../master/screenshots/core-site.png?raw=true)
-![Image](../master/screenshots/hdfs-site.png?raw=true)
-
-restart hadoop and restart impala
-
-## SUMMARY
-![Image](../master/screenshots/summary.png?raw=true)
-
-## NOTICE
-- make sure your hive server normally
-- hdfs and hive conf file is sync to /etc/impala/conf
-
-## Some error note:
-- NoSuchMethodError:setCaching
-![Image](../master/screenshots/impala-error.jpg?raw=true)
-Impala rely on Cloudrea Hbase Jar ,please use relevant jar.

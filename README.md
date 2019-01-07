@@ -14,10 +14,7 @@ VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]
 sudo git clone https://github.com/ZZZKROSS/ambari-imapla-service.git /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/IMPALA        
 ```
 
-### 2. MPACK 
-```
-ambari-server install-mpack --mpack=ambari-impala-mpack-2.6.0-0816.tar.gz -v
-```
+
 
 ## local repository
 Make your local repository.Download software from https://archive.cloudera.com/cdh5/redhat/6/x86_64/cdh/5.8.0/

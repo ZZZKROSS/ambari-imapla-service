@@ -1,0 +1,444 @@
+object ppReport: TppReport
+  AutoStop = False
+  DataPipeline = Plbiolife
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Report'
+  PrinterSetup.PaperName = 'Letter'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 279401
+  PrinterSetup.mmPaperWidth = 215900
+  PrinterSetup.PaperSize = 1
+  Template.FileName = 'C:\WINDOWS\DESKTOP\nick\report_sample\fish.rtm'
+  Template.Format = ftASCII
+  DeviceType = 'Screen'
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    0000000008870000000000000000000000000087700000008800000000000000
+    0000000555507700757700000000000007000005555000585550080000000000
+    0008877555555555555000000000000070000555555555555500800000000008
+    0550555555555555555070000000000755555555555555555555070800000005
+    5555555555555555555555757000000055555555555555555555555557000008
+    5555555555555555555555555070000055555555555555555555555500700080
+    5555555555500555555555500000770555555555500000055555555000000005
+    5555555550780700555555557000005555555555000000705555555570007055
+    5555555507000070555555558000755555555555570007005555555555800555
+    5F55555557770005555555555580088755F55555550005555555555550800007
+    55FF5555555555555555555050800008057FF555555555555555550000000000
+    705FFF555555555555555508700000008055FFFFF55555555555570000000008
+    00555FFFFF55555555555800000000000055555FF85555555555558000000000
+    8005555555555555505555800000000000858870555555550005080000000000
+    0000000800555588880080000000000000000000805555000088000000000000
+    000000008000070000000000000000000000000008800000000000000000FFF8
+    FFFFFFC0F3FFFFE030FFFBE0003FF800007FF000007FE000007FE000002FE000
+    0007F0000003E0000001E0000001C000000300000007000080070003C0070003
+    C007000380018000000180000001E0000001E0000003F0000003F000003FE000
+    003FE000001FF000001FFC00003FFFE0007FFFF03CFFFFF03FFFFFF9FFFF}
+  Left = 209
+  Top = 164
+  Version = '5.55'
+  mmColumnWidth = 0
+  object ppHeaderBand1: TppHeaderBand
+    mmBottomOffset = 0
+    mmHeight = 13229
+    mmPrintPosition = 0
+  end
+  object ppDetailBand1: TppDetailBand
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 50800
+    mmPrintPosition = 0
+    object ppShape1: TppShape
+      UserName = 'Shape1'
+      Brush.Color = clRed
+      mmHeight = 27940
+      mmLeft = 11430
+      mmTop = 0
+      mmWidth = 68580
+      BandType = 4
+    end
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      DataField = 'Common_Name'
+      DataPipeline = Plbiolife
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Name = 'Arial'
+      Font.Size = 20
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      mmHeight = 8467
+      mmLeft = 12700
+      mmTop = 2646
+      mmWidth = 66146
+      BandType = 4
+    end
+    object ppDBImage1: TppDBImage
+      UserName = 'DBImage1'
+      MaintainAspectRatio = True
+      Stretch = True
+      DataField = 'Graphic'
+      DataPipeline = Plbiolife
+      GraphicType = 'Bitmap'
+      ParentDataPipeline = False
+      mmHeight = 13229
+      mmLeft = 12965
+      mmTop = 11377
+      mmWidth = 13229
+      BandType = 4
+    end
+    object ppShape2: TppShape
+      UserName = 'Shape2'
+      StretchWithParent = True
+      mmHeight = 20320
+      mmLeft = 11430
+      mmTop = 25400
+      mmWidth = 68580
+      BandType = 4
+    end
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      Caption = 'Category'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3440
+      mmLeft = 15346
+      mmTop = 28046
+      mmWidth = 12171
+      BandType = 4
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      DataField = 'Category'
+      DataPipeline = Plbiolife
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      mmHeight = 3703
+      mmLeft = 38100
+      mmTop = 28046
+      mmWidth = 40640
+      BandType = 4
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      Caption = 'Length In'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3703
+      mmLeft = 15346
+      mmTop = 33338
+      mmWidth = 13759
+      BandType = 4
+    end
+    object ppDBText3: TppDBText
+      UserName = 'DBText3'
+      DataField = 'Length_In'
+      DataPipeline = Plbiolife
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      mmHeight = 3703
+      mmLeft = 38100
+      mmTop = 33338
+      mmWidth = 40640
+      BandType = 4
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label3'
+      Caption = 'Species Name'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 3703
+      mmLeft = 15346
+      mmTop = 38629
+      mmWidth = 20638
+      BandType = 4
+    end
+    object ppDBText4: TppDBText
+      UserName = 'DBText4'
+      DataField = 'Species_Name'
+      DataPipeline = Plbiolife
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 8
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      mmHeight = 3703
+      mmLeft = 38100
+      mmTop = 38629
+      mmWidth = 40640
+      BandType = 4
+    end
+    object ppShape3: TppShape
+      UserName = 'Shape3'
+      ReprintOnOverFlow = True
+      StretchWithParent = True
+      mmHeight = 45720
+      mmLeft = 80518
+      mmTop = 254
+      mmWidth = 105410
+      BandType = 4
+    end
+    object ppDBMemo1: TppDBMemo
+      UserName = 'DBMemo1'
+      CharWrap = False
+      DataField = 'Category'
+      DataPipeline = Plbiolife
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clRed
+      Font.Name = 'Arial'
+      Font.Size = 12
+      Font.Style = [fsBold]
+      ParentDataPipeline = False
+      Stretch = True
+      Transparent = True
+      mmHeight = 41910
+      mmLeft = 82550
+      mmTop = 2032
+      mmWidth = 101600
+      BandType = 4
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmLeading = 0
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    mmBottomOffset = 0
+    mmHeight = 13229
+    mmPrintPosition = 0
+  end
+  object ppGroup1: TppGroup
+    BreakName = 'Common_Name'
+    DataPipeline = Plbiolife
+    KeepTogether = True
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
+  object daDataModule1: TdaDataModule
+    object daMySQLQueryDataView1: TdaMySQLQueryDataView
+      Report = ppReport
+      UserName = 'Query_Plbiolife'
+      Height = 211
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 200
+      AutoSearchTabOrder = 0
+      object Plbiolife: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'Plbiolife'
+        object ppField1: TppField
+          FieldAlias = 'Species No'
+          FieldName = 'Species_No'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 0
+          TableName = 'plbiolife'
+        end
+        object ppField2: TppField
+          FieldAlias = 'Category'
+          FieldName = 'Category'
+          FieldLength = 15
+          DisplayWidth = 15
+          Position = 1
+          TableName = 'plbiolife'
+        end
+        object ppField3: TppField
+          FieldAlias = 'Common Name'
+          FieldName = 'Common_Name'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 2
+          TableName = 'plbiolife'
+        end
+        object ppField4: TppField
+          FieldAlias = 'Species Name'
+          FieldName = 'Species_Name'
+          FieldLength = 40
+          DisplayWidth = 40
+          Position = 3
+          TableName = 'plbiolife'
+        end
+        object ppField5: TppField
+          FieldAlias = 'Length (cm)'
+          FieldName = 'Length_cm'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 4
+          TableName = 'plbiolife'
+        end
+        object ppField6: TppField
+          FieldAlias = 'Length In'
+          FieldName = 'Length_In'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 5
+          TableName = 'plbiolife'
+        end
+        object ppField7: TppField
+          FieldAlias = 'Graphic'
+          FieldName = 'Graphic'
+          FieldLength = 65535
+          Linkable = False
+          DataType = dtBLOB
+          DisplayWidth = 10
+          Position = 6
+          TableName = 'plbiolife'
+        end
+      end
+      object daSQL1: TdaSQL
+        DatabaseName = 'report_sample'
+        DatabaseType = dtMySQL
+        DataPipelineName = 'Plbiolife'
+        LinkColor = clMaroon
+        MaxSQLFieldAliasLength = 25
+        SQLText.Strings = (
+          'SELECT plbiolife.`Species No` AS Species_No, '
+          '       plbiolife.Category, plbiolife.Common_Name, '
+          '       plbiolife.`Species Name` AS Species_Name, '
+          '       plbiolife.`Length (cm)` AS Length_cm, '
+          '       plbiolife.Length_In, plbiolife.Graphic'
+          'FROM plbiolife plbiolife')
+        SQLType = sqSQL2
+        object TdaField
+          Alias = 'Species No'
+          DataType = dtDouble
+          DisplayWidth = 10
+          FieldAlias = 'Species No'
+          FieldLength = 0
+          FieldName = 'Species No'
+          SQLFieldName = 'Species_No'
+          TableAlias = 'Plbiolife'
+          TableName = 'plbiolife'
+          TableSQLAlias = 'plbiolife'
+        end
+        object TdaField
+          Alias = 'Category'
+          DisplayWidth = 15
+          FieldAlias = 'Category'
+          FieldLength = 15
+          FieldName = 'Category'
+          SQLFieldName = 'Category'
+          TableAlias = 'Plbiolife'
+          TableName = 'plbiolife'
+          TableSQLAlias = 'plbiolife'
+        end
+        object TdaField
+          Alias = 'Common Name'
+          DisplayWidth = 30
+          FieldAlias = 'Common Name'
+          FieldLength = 30
+          FieldName = 'Common_Name'
+          SQLFieldName = 'Common_Name'
+          TableAlias = 'Plbiolife'
+          TableName = 'plbiolife'
+          TableSQLAlias = 'plbiolife'
+        end
+        object TdaField
+          Alias = 'Species Name'
+          DisplayWidth = 40
+          FieldAlias = 'Species Name'
+          FieldLength = 40
+          FieldName = 'Species Name'
+          SQLFieldName = 'Species_Name'
+          TableAlias = 'Plbiolife'
+          TableName = 'plbiolife'
+          TableSQLAlias = 'plbiolife'
+        end
+        object TdaField
+          Alias = 'Length (cm)'
+          DataType = dtDouble
+          DisplayWidth = 10
+          FieldAlias = 'Length (cm)'
+          FieldLength = 0
+          FieldName = 'Length (cm)'
+          SQLFieldName = 'Length_cm'
+          TableAlias = 'Plbiolife'
+          TableName = 'plbiolife'
+          TableSQLAlias = 'plbiolife'
+        end
+        object TdaField
+          Alias = 'Length In'
+          DataType = dtDouble
+          DisplayWidth = 10
+          FieldAlias = 'Length In'
+          FieldLength = 0
+          FieldName = 'Length_In'
+          SQLFieldName = 'Length_In'
+          TableAlias = 'Plbiolife'
+          TableName = 'plbiolife'
+          TableSQLAlias = 'plbiolife'
+        end
+        object TdaField
+          Alias = 'Graphic'
+          DataType = dtBLOB
+          DisplayWidth = 10
+          FieldAlias = 'Graphic'
+          FieldLength = 65535
+          FieldName = 'Graphic'
+          Linkable = False
+          SQLFieldName = 'Graphic'
+          TableAlias = 'Plbiolife'
+          TableName = 'plbiolife'
+          TableSQLAlias = 'plbiolife'
+        end
+        object TdaTable
+          ChildType = 5
+          Alias = 'Plbiolife'
+          JoinType = dajtNone
+          SQLAlias = 'plbiolife'
+          TableAlias = 'Plbiolife'
+          TableName = 'plbiolife'
+        end
+      end
+    end
+  end
+end

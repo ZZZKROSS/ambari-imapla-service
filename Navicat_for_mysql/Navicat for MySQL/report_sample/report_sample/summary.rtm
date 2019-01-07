@@ -1,0 +1,471 @@
+object ppReport: TppReport
+  AutoStop = False
+  DataPipeline = plCustomer
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Report'
+  PrinterSetup.PaperName = 'Letter'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.mmMarginBottom = 6350
+  PrinterSetup.mmMarginLeft = 6350
+  PrinterSetup.mmMarginRight = 6350
+  PrinterSetup.mmMarginTop = 6350
+  PrinterSetup.mmPaperHeight = 279401
+  PrinterSetup.mmPaperWidth = 215900
+  PrinterSetup.PaperSize = 1
+  SaveAsTemplate = True
+  Template.FileName = 'C:\WINDOWS\DESKTOP\nick\report_sample\summary.rtm'
+  Template.Format = ftASCII
+  DeviceType = 'Screen'
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    0000000008870000000000000000000000000087700000008800000000000000
+    0000000555507700757700000000000007000005555000585550080000000000
+    0008877555555555555000000000000070000555555555555500800000000008
+    0550555555555555555070000000000755555555555555555555070800000005
+    5555555555555555555555757000000055555555555555555555555557000008
+    5555555555555555555555555070000055555555555555555555555500700080
+    5555555555500555555555500000770555555555500000055555555000000005
+    5555555550780700555555557000005555555555000000705555555570007055
+    5555555507000070555555558000755555555555570007005555555555800555
+    5F55555557770005555555555580088755F55555550005555555555550800007
+    55FF5555555555555555555050800008057FF555555555555555550000000000
+    705FFF555555555555555508700000008055FFFFF55555555555570000000008
+    00555FFFFF55555555555800000000000055555FF85555555555558000000000
+    8005555555555555505555800000000000858870555555550005080000000000
+    0000000800555588880080000000000000000000805555000088000000000000
+    000000008000070000000000000000000000000008800000000000000000FFF8
+    FFFFFFC0F3FFFFE030FFFBE0003FF800007FF000007FE000007FE000002FE000
+    0007F0000003E0000001E0000001C000000300000007000080070003C0070003
+    C007000380018000000180000001E0000001E0000003F0000003F000003FE000
+    003FE000001FF000001FFC00003FFFE0007FFFF03CFFFFF03FFFFFF9FFFF}
+  Left = 209
+  Top = 164
+  Version = '5.55'
+  mmColumnWidth = 0
+  object ppHeaderBand1: TppHeaderBand
+    mmBottomOffset = 0
+    mmHeight = 13229
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      UserName = 'Label1'
+      AutoSize = False
+      Caption = 'Custno'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 2646
+      mmTop = 8996
+      mmWidth = 27517
+      BandType = 0
+    end
+    object ppLabel2: TppLabel
+      UserName = 'Label2'
+      AutoSize = False
+      Caption = 'Company'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 31221
+      mmTop = 8996
+      mmWidth = 44715
+      BandType = 0
+    end
+    object ppLabel3: TppLabel
+      UserName = 'Label3'
+      AutoSize = False
+      Caption = 'Contact'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 79375
+      mmTop = 8996
+      mmWidth = 53975
+      BandType = 0
+    end
+    object ppLabel4: TppLabel
+      UserName = 'Label4'
+      AutoSize = False
+      Caption = 'Phone'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = [fsBold]
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 134409
+      mmTop = 8996
+      mmWidth = 40746
+      BandType = 0
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    mmBottomOffset = 0
+    mmHeight = 5292
+    mmPrintPosition = 0
+    object ppShape1: TppShape
+      UserName = 'Shape1'
+      Brush.Color = clYellow
+      ParentWidth = True
+      Pen.Color = clYellow
+      mmHeight = 4233
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 203200
+      BandType = 4
+    end
+    object ppDBText1: TppDBText
+      UserName = 'DBText1'
+      DataField = 'CustNo'
+      DataPipeline = plCustomer
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 2646
+      mmTop = 0
+      mmWidth = 27517
+      BandType = 4
+    end
+    object ppDBText2: TppDBText
+      UserName = 'DBText2'
+      DataField = 'Company'
+      DataPipeline = plCustomer
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 31221
+      mmTop = 0
+      mmWidth = 44715
+      BandType = 4
+    end
+    object ppDBText3: TppDBText
+      UserName = 'DBText3'
+      DataField = 'Contact'
+      DataPipeline = plCustomer
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 79375
+      mmTop = 0
+      mmWidth = 53975
+      BandType = 4
+    end
+    object ppDBText4: TppDBText
+      UserName = 'DBText4'
+      DataField = 'Phone'
+      DataPipeline = plCustomer
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 134409
+      mmTop = 0
+      mmWidth = 40746
+      BandType = 4
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    mmBottomOffset = 0
+    mmHeight = 13229
+    mmPrintPosition = 0
+    object ppSystemVariable1: TppSystemVariable
+      UserName = 'SystemVariable1'
+      VarType = vtPrintDateTime
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = []
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 1058
+      mmTop = 6879
+      mmWidth = 30163
+      BandType = 8
+    end
+    object ppSystemVariable2: TppSystemVariable
+      UserName = 'SystemVariable2'
+      VarType = vtPageNoDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Arial'
+      Font.Size = 10
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 4233
+      mmLeft = 180182
+      mmTop = 6879
+      mmWidth = 10848
+      BandType = 8
+    end
+  end
+  object daDataModule1: TdaDataModule
+    object daMySQLQueryDataView1: TdaMySQLQueryDataView
+      Report = ppReport
+      UserName = 'Query_plCustomer'
+      Height = 313
+      Left = 10
+      NameColumnWidth = 105
+      SizeColumnWidth = 35
+      SortMode = 0
+      Top = 10
+      TypeColumnWidth = 52
+      Width = 200
+      AutoSearchTabOrder = 0
+      object plCustomer: TppChildDBPipeline
+        AutoCreateFields = False
+        UserName = 'plCustomer'
+        object ppField1: TppField
+          FieldAlias = 'Addr1'
+          FieldName = 'Addr1'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 0
+        end
+        object ppField2: TppField
+          FieldAlias = 'Addr2'
+          FieldName = 'Addr2'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 1
+        end
+        object ppField3: TppField
+          FieldAlias = 'City'
+          FieldName = 'City'
+          FieldLength = 15
+          DisplayWidth = 15
+          Position = 2
+        end
+        object ppField4: TppField
+          FieldAlias = 'Company'
+          FieldName = 'Company'
+          FieldLength = 30
+          DisplayWidth = 30
+          Position = 3
+        end
+        object ppField5: TppField
+          FieldAlias = 'Contact'
+          FieldName = 'Contact'
+          FieldLength = 20
+          DisplayWidth = 20
+          Position = 4
+        end
+        object ppField6: TppField
+          FieldAlias = 'Country'
+          FieldName = 'Country'
+          FieldLength = 20
+          DisplayWidth = 20
+          Position = 5
+        end
+        object ppField7: TppField
+          FieldAlias = 'CustNo'
+          FieldName = 'CustNo'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 6
+        end
+        object ppField8: TppField
+          FieldAlias = 'FAX'
+          FieldName = 'FAX'
+          FieldLength = 15
+          DisplayWidth = 15
+          Position = 7
+        end
+        object ppField9: TppField
+          FieldAlias = 'LastInvoiceDate'
+          FieldName = 'LastInvoiceDate'
+          FieldLength = 0
+          DataType = dtDateTime
+          DisplayWidth = 18
+          Position = 8
+        end
+        object ppField10: TppField
+          FieldAlias = 'Phone'
+          FieldName = 'Phone'
+          FieldLength = 15
+          DisplayWidth = 15
+          Position = 9
+        end
+        object ppField11: TppField
+          FieldAlias = 'State'
+          FieldName = 'State'
+          FieldLength = 20
+          DisplayWidth = 20
+          Position = 10
+        end
+        object ppField12: TppField
+          FieldAlias = 'TaxRate'
+          FieldName = 'TaxRate'
+          FieldLength = 0
+          DataType = dtDouble
+          DisplayWidth = 10
+          Position = 11
+        end
+        object ppField13: TppField
+          FieldAlias = 'Zip'
+          FieldName = 'Zip'
+          FieldLength = 10
+          DisplayWidth = 10
+          Position = 12
+        end
+      end
+      object daSQL1: TdaSQL
+        DatabaseName = 'report_sample'
+        DatabaseType = dtMySQL
+        DataPipelineName = 'plCustomer'
+        EditSQLAsText = True
+        LinkColor = clBlack
+        MaxSQLFieldAliasLength = 0
+        SQLText.Strings = (
+          'SELECT customer.Addr1, customer.Addr2, '
+          '       customer.City, customer.Company, '
+          '       customer.Contact, customer.Country, '
+          '       customer.CustNo, customer.FAX, '
+          '       customer.LastInvoiceDate, customer.Phone, '
+          '       customer.State, customer.TaxRate, '
+          '       customer.Zip'
+          'FROM customer customer')
+        SQLType = sqSQL2
+        object TdaField
+          Alias = 'Addr1'
+          DisplayWidth = 30
+          FieldAlias = 'Addr1'
+          FieldLength = 30
+          FieldName = 'Addr1'
+          SQLFieldName = 'Addr1'
+        end
+        object TdaField
+          Alias = 'Addr2'
+          DisplayWidth = 30
+          FieldAlias = 'Addr2'
+          FieldLength = 30
+          FieldName = 'Addr2'
+          SQLFieldName = 'Addr2'
+        end
+        object TdaField
+          Alias = 'City'
+          DisplayWidth = 15
+          FieldAlias = 'City'
+          FieldLength = 15
+          FieldName = 'City'
+          SQLFieldName = 'City'
+        end
+        object TdaField
+          Alias = 'Company'
+          DisplayWidth = 30
+          FieldAlias = 'Company'
+          FieldLength = 30
+          FieldName = 'Company'
+          SQLFieldName = 'Company'
+        end
+        object TdaField
+          Alias = 'Contact'
+          DisplayWidth = 20
+          FieldAlias = 'Contact'
+          FieldLength = 20
+          FieldName = 'Contact'
+          SQLFieldName = 'Contact'
+        end
+        object TdaField
+          Alias = 'Country'
+          DisplayWidth = 20
+          FieldAlias = 'Country'
+          FieldLength = 20
+          FieldName = 'Country'
+          SQLFieldName = 'Country'
+        end
+        object TdaField
+          Alias = 'CustNo'
+          DataType = dtDouble
+          DisplayWidth = 10
+          FieldAlias = 'CustNo'
+          FieldLength = 0
+          FieldName = 'CustNo'
+          SQLFieldName = 'CustNo'
+        end
+        object TdaField
+          Alias = 'FAX'
+          DisplayWidth = 15
+          FieldAlias = 'FAX'
+          FieldLength = 15
+          FieldName = 'FAX'
+          SQLFieldName = 'FAX'
+        end
+        object TdaField
+          Alias = 'LastInvoiceDate'
+          DataType = dtDateTime
+          DisplayWidth = 18
+          FieldAlias = 'LastInvoiceDate'
+          FieldLength = 0
+          FieldName = 'LastInvoiceDate'
+          SQLFieldName = 'LastInvoiceDate'
+        end
+        object TdaField
+          Alias = 'Phone'
+          DisplayWidth = 15
+          FieldAlias = 'Phone'
+          FieldLength = 15
+          FieldName = 'Phone'
+          SQLFieldName = 'Phone'
+        end
+        object TdaField
+          Alias = 'State'
+          DisplayWidth = 20
+          FieldAlias = 'State'
+          FieldLength = 20
+          FieldName = 'State'
+          SQLFieldName = 'State'
+        end
+        object TdaField
+          Alias = 'TaxRate'
+          DataType = dtDouble
+          DisplayWidth = 10
+          FieldAlias = 'TaxRate'
+          FieldLength = 0
+          FieldName = 'TaxRate'
+          SQLFieldName = 'TaxRate'
+        end
+        object TdaField
+          Alias = 'Zip'
+          DisplayWidth = 10
+          FieldAlias = 'Zip'
+          FieldLength = 10
+          FieldName = 'Zip'
+          SQLFieldName = 'Zip'
+        end
+      end
+    end
+  end
+end
